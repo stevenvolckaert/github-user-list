@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    //"allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "jsx": "react",
+    "outDir": "lib",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules"]
+}

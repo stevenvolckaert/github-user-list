@@ -1,0 +1,47 @@
+{
+  "name": "github-user-list",
+  "version": "1.0.0-alpha.1",
+  "description": "A React plugin that displays GitHub users.",
+  "repository": "https://github.com/stevenvolckaert/github-user-list",
+  "main": "dist/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build:dist": "parcel build --target=node ./src/index.ts",
+    "build:lib": "tsc",
+    "build": "npm run build:lib && npm run build:dist",
+    "clean": "node ./scripts/clean.js",
+    "develop": "parcel ./src/index.html",
+    "pack": "npm run clean && npm run build && npm pack",
+    "publish:package": "npm run clean && npm run build && npm publish",
+    "rebuild": "npm run clean && npm run build",
+    "start": "npm run develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "github"
+  ],
+  "author": "Steven Volckaert <steven.volckaert@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "16.4.1",
+    "@types/react-dom": "16.0.6",
+    "axios": "0.18.0",
+    "del": "~3.0.0",
+    "less": "~3.0.4",
+    "linqts": "1.11.0",
+    "office-ui-fabric-react": "6.19.0",
+    "parcel-bundler": "~1.9.3",
+    "react": ">=16.3.2-0 <17.0.0",
+    "react-dom": ">=16.3.2-0 <17.0.0",
+    "typescript": "^2.9.2"
+  },
+  "peerDependencies": {
+    "axios": "0.18.0",
+    "linqts": "1.11.0",
+    "react": ">=16.3.2-0 <17.0.0",
+    "react-dom": ">=16.3.2-0 <17.0.0",
+    "office-ui-fabric-react": "6.19.0"
+  }
+}
